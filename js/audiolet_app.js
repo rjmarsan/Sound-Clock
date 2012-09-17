@@ -18,9 +18,9 @@ function playExample(callbk) {
         );
 
         // Filter
-        var note = now.getHours()*5 + 70;
+        var note = now.getHours()*2 + 65;
         var filterfreq = Math.pow(2, (note-69)/12)*440;
-        var q = now.getMinutes()+2;
+        var q = Math.pow(now.getMinutes(),1.4)/5+2;//now.getMinutes()+2;
 
         console.log("freq "+filterfreq+ "note:"+note+ " q:"+q);
 
